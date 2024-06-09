@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #4a4a4a;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+#carts-container, #products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Cart and Product Styles */
+.cart, .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart a, .product a {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.add-cart, button.add-product {
+    background-color: #1a73e8;
+    color: #fff;
+    align-self: center;
+}
+
+button.delete-cart, button.delete-product {
+    background-color: #ff4d4d;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px; /* Added padding */
+}
+
+button.delete-cart:hover, button.delete-product:hover {
+    background-color: #cc0000;
+}
+

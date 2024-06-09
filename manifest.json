@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Cart Manager",
+    "version": "1.0",
+    "description": "Manage Amazon products by sorting links into different carts.",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Amazon Cart Manager"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
+
